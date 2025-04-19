@@ -74,13 +74,16 @@ export default function TodoComp() {
               <p>الكل</p>
             </div>
           </div> */}
+
+
+
           <div className="taskState flex justify-center my-3 w-[100] ">
             <Tabs
               className="w-full justify-center"
               aria-label="Pills"
               variant="pills"
             >
-              <TabItem className=" bg-amber-800important" title="منجز">
+              <TabItem title="منجز">
                 <div>{completedTasksList}</div>
               </TabItem>
 
