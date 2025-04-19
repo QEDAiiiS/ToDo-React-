@@ -10,7 +10,7 @@ export default function TodoComp() {
   const [input, setInput] = useState("");
 
   useEffect(() => {
-    const tasksCopy = JSON.parse(localStorage.getItem("tasks"));
+    const tasksCopy = JSON.parse(localStorage.getItem("tasks")) ?? [];
     setTasks(tasksCopy);
   }, []);
 
